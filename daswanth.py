@@ -1,5 +1,7 @@
-a=int(input("enter the value"))
-if a>0:
-    print("daswanth")
-else:
-    print("hemanth")
+n=int(input("enter the value"))
+i=0
+sum=0
+for i in range(n):
+    sum=sum+i
+
+print(sum)
