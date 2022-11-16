@@ -1,0 +1,54 @@
+#lex_auth_0127382164803993601239
+
+#This verification is based on string match.
+
+def sum_of_numbers(list_of_num,filter_func):
+    data="N/A"
+    pass #Remove pass and write the logic here
+    if (filter_func==None): 
+        return sum(list_of_num)
+    elif (filter_func==even):
+        s=0
+        for i in list_of_num:
+            if i%2==0:
+               s=s+i
+        return s
+               
+        
+    
+    elif (filter_func==odd):
+
+        s=0
+        for i in list_of_num:
+            if i%2!=0:
+               s=s+i
+        return s
+        
+    
+    
+    
+    else:
+        return sum(filter_func) 
+    
+
+def even(data):
+    pass #Remove pass and write the logic here
+    e=[]
+    for i in data:
+        if i%2==0:
+            e.append(i)
+    return e 
+
+def odd(data):
+    pass #Remove pass and write the logic here
+    o=[]
+    for i in data:
+        if i%2!=0:
+            o.append(i)
+    return o
+
+sample_data = range(1,11)
+
+print(even(sample_data))
+print(odd(sample_data))
+print(sum_of_numbers(sample_data,None))
