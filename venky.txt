@@ -1,6 +1,3 @@
-#lex_auth_0127382164803993601239
-
-#This verification is based on string match.
 
 def sum_of_numbers(list_of_num,filter_func):
     data="N/A"
